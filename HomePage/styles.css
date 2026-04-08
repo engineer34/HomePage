@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial,sans-serif ;
+}
+body{
+background: #0f172a;
+    color: white;
+}/* our header tag */
+header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px ;
+    background:#020617;
+}
+.logo{
+font-size: 24px;
+    font-weight: bold;}
+    nav{
+        display:flex; gap: 40px;/*space between links*/
+    }
+    .social-media a:hover {
+    color: #38bdf8;
+    transform: scale(1.2);
+}
+nav a {
+    margin-left: 20px;
+text-decoration: none;
+    color: white;
+     font-size: 18px;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #38bdf8;
+}
+/* our home pahe main areaa everything must be in center */
+.home {
+    position:relative;
+     height: 100vh;
+background: url("javi.jpg") no-repeat center center/cover;
+display: flex;
+    align-items: center;
+    justify-content: center;
+   text-align: center;
+   }
+/*home image*/
+.home-content{
+    position: relative;
+    z-index: 2;
+    color: white;
+}
+.home-content h1{
+    font-size: 40px;
+}
+.home-content span{
+    color: #38bdf8;
+}
+/*couldnt get my stuff to be seen so made text dark*/
+.home::before{
+content:"";
+position: absolute;
+top: 0;
+left:0;
+width: 100%;
+    height: 100%;
+background: rgba(0, 0, 0, 0.1); /*darker */
+z-index:1;
+}
+.social-media{
+    margin-top:20px;
+}
+.social-media a{
+    margin: 0 10px;
+    font-size: 30px;
+    transition: 0.3s;
+    color: white;
+}
+.projects, .contact {
+    padding: 120px 50px;
+    text-align: center;
+    margin-top: 150px;
+}
+h1{
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+ h2 {
+    font-size: 32px ;
+    margin-bottom: 20px;}
+
+p{color: #94a3b8;
+}
+/* making it responsive with our media */
+@media (max-width: 768px) {
+    .home {
+        flex-direction: column;
+        text-align: center;
+}
+
+}
