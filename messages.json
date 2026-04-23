@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "j",
+    "email": "jmedina@my.okcu.edu",
+    "message": "hh",
+    "createdAt": "2026-04-23T04:49:45.202Z"
+  },
+  {
+    "id": 2,
+    "name": "j",
+    "email": "javi615715@gmail.com",
+    "message": "hello world",
+    "createdAt": "2026-04-23T04:58:40.417Z"
+  }
+]
